@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, OnChanges, SimpleChange  } from '@angular/core';
+import { Component, OnInit, Input, Output, OnChanges, SimpleChange, HostBinding  } from '@angular/core';
 
 
 @Component({

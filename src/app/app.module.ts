@@ -9,7 +9,6 @@ import { FlexSparkUIModule } from 'src/app/shared/modules/flex-spark/flex-spark.
 import { ComponentCombolistUIModule } from 'src/app/shared/modules/component-combolist/component-combolist.module';
 import { Mxml2009UIModule } from 'src/app/shared/modules/mxml2009/mxml2009.module';
 import { FlexMxUIModule } from 'src/app/shared/modules/flex-mx/flex-mx.module';
-import { MXWModule } from 'mxwmodule';
 
 /**
 * Definitions
@@ -18,6 +17,7 @@ import {test}from './test/test.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
 declarations: [
@@ -31,8 +31,8 @@ FlexSparkUIModule,
 ComponentCombolistUIModule,
 Mxml2009UIModule,
 FlexMxUIModule,
-MXWModule,
-AppRoutingModule
+AppRoutingModule,
+BrowserAnimationsModule
 ],
 providers: [],
   bootstrap: [AppComponent]
