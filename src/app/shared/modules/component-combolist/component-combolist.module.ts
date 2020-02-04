@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 /**
 * Module imports
 */
@@ -21,6 +22,7 @@ import {GeneriqueCombox} from './component-combolist-generique-combox/component-
   ],
   imports: [
     CommonModule,
+    FlexLayoutModule,
     // Dependencies
   ]
 })

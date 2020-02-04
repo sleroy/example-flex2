@@ -10,11 +10,11 @@ export class VerticalLayout implements OnInit {
 
   constructor() { }
 
-   @Input()  paddingTop: Number;
    @Input()  paddingBottom: Number;
-   @Input()  paddingLeft: Number;
    @Input()  paddingRight: Number;
    @Input()  gap: Number;
+   @Input()  paddingTop: Number;
+   @Input()  paddingLeft: Number;
 
 
   ngOnInit() {

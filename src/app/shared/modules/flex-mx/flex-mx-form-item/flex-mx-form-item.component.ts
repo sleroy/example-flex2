@@ -10,7 +10,6 @@ export class FormItem implements OnInit {
 
   constructor() { }
 
-   @Input()  width: String;
    @Input()  label: String;
 
 

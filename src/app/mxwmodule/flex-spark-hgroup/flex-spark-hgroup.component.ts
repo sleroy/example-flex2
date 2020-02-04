@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, OnChanges, SimpleChange, HostBinding  } from '@angular/core';
+
 
 @Component({
   selector: 'flex-spark-hgroup',
@@ -8,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class HGroup implements OnInit {
 
   constructor() { }
+
+   @Input()  verticalAlign: String;
+   @Input()  id: String;
+
 
   ngOnInit() {
   }

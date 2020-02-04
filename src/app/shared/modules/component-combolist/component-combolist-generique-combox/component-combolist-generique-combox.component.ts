@@ -10,7 +10,6 @@ export class GeneriqueCombox implements OnInit {
 
   constructor() { }
 
-   @Input()  width: String;
    @Input()  id: String;
    @Input()  dataProvider: any;
 

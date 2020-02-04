@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, OnChanges, SimpleChange, HostBinding  } from '@angular/core';
+
 
 @Component({
   selector: 'flex-spark-vgroup',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class VGroup implements OnInit {
 
   constructor() { }
+
+
 
   ngOnInit() {
   }

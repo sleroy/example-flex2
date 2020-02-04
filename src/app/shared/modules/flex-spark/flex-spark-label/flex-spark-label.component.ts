@@ -10,11 +10,10 @@ export class Label implements OnInit {
 
   constructor() { }
 
-   @Input()  width: String;
-   @Input()  id: String;
    @Input()  paddingBottom: Number;
-   @Input()  text: any;
    @Input()  textAlign: String;
+   @Input()  id: String;
+   @Input()  text: any;
 
 
   ngOnInit() {

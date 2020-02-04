@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 /**
 * Module imports
 */
@@ -24,6 +25,7 @@ import {Script} from './mxml-2009-script/mxml-2009-script.component';
   ],
   imports: [
     CommonModule,
+    FlexLayoutModule,
     // Dependencies
   ]
 })

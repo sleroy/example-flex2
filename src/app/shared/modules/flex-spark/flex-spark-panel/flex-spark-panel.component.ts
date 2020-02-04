@@ -10,11 +10,9 @@ export class Panel implements OnInit {
 
   constructor() { }
 
-   @Input()  width: String;
    @Input()  verticalCenter: Number;
    @Input()  title: String;
    @Input()  horizontalCenter: Number;
-   @Input()  height: String;
 
 
   ngOnInit() {

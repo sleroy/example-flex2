@@ -10,7 +10,6 @@ export class RadioButtonOuiNon implements OnInit {
 
   constructor() { }
 
-   @Input()  width: String;
    @Input()  id: String;
    @Input()  label: String;
 

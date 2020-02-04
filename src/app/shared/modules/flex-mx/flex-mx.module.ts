@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
 /**
 * Module imports
 */
@@ -33,6 +34,7 @@ import {TextInput} from './flex-mx-text-input/flex-mx-text-input.component';
   ],
   imports: [
     CommonModule,
+    FlexLayoutModule,
     // Dependencies
   ]
 })

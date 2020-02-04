@@ -10,7 +10,6 @@ export class DateField implements OnInit {
 
   constructor() { }
 
-   @Input()  width: String;
    @Input()  id: String;
 
 

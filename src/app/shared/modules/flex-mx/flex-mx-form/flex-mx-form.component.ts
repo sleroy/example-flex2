@@ -10,8 +10,6 @@ export class Form implements OnInit {
 
   constructor() { }
 
-   @Input()  width: String;
-   @Input()  height: String;
 
 
   ngOnInit() {

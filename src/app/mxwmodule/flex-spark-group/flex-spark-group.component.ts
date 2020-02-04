@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, OnChanges, SimpleChange, HostBinding  } from '@angular/core';
+
 
 @Component({
   selector: 'flex-spark-group',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class Group implements OnInit {
 
   constructor() { }
+
+   @Input()  id: String;
+
 
   ngOnInit() {
   }

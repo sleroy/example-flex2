@@ -10,7 +10,6 @@ export class Button implements OnInit {
 
   constructor() { }
 
-   @Input()  width: String;
    @Input()  id: String;
    @Input()  label: String;
    @Input()  click: any;
