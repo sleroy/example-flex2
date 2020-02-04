@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 /**
 * Module imports
 */
@@ -25,6 +25,7 @@ AppComponent,
 test,
 ],
 imports: [
+FlexLayoutModule,
 BrowserModule,
 ComponentRadiobuttonUIModule,
 FlexSparkUIModule,
