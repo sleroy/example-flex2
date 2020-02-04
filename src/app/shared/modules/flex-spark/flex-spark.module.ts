@@ -9,13 +9,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 * Definitions
 */
 import {Application} from './flex-spark-application/flex-spark-application.component';
-import {Button} from './flex-spark-button/flex-spark-button.component';
-import {Label} from './flex-spark-label/flex-spark-label.component';
-import {layout} from './flex-spark-layout/flex-spark-layout.component';
 import {Panel} from './flex-spark-panel/flex-spark-panel.component';
 import {RadioButton} from './flex-spark-radio-button/flex-spark-radio-button.component';
 import {RadioButtonGroup} from './flex-spark-radio-button-group/flex-spark-radio-button-group.component';
-import {VerticalLayout} from './flex-spark-vertical-layout/flex-spark-vertical-layout.component';
+import {Label} from './flex-spark-label/flex-spark-label.component';
 
 /**
  * Definition of the module FlexSparkUIModule
@@ -23,23 +20,17 @@ import {VerticalLayout} from './flex-spark-vertical-layout/flex-spark-vertical-l
 @NgModule({
   declarations: [
     Application,
-    Button,
-    Label,
-    layout,
     Panel,
     RadioButton,
     RadioButtonGroup,
-    VerticalLayout,
+    Label,
   ],
   exports: [
     Application,
-    Button,
-    Label,
-    layout,
     Panel,
     RadioButton,
     RadioButtonGroup,
-    VerticalLayout,
+    Label,
   ],
   imports: [
     CommonModule,
