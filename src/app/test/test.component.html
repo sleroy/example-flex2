@@ -1,0 +1,40 @@
+
+
+<flex-spark-application>
+    <mxml-2009-declarations></mxml-2009-declarations>
+    <flex-spark-panel verticalCenter="0" width="75%" title="Form Container Example" horizontalCenter="0" height="75%">
+        <flex-spark-layout>
+            <flex-spark-vertical-layout paddingBottom="50" paddingRight="50" paddingTop="50" paddingLeft="50"></flex-spark-vertical-layout>
+        </flex-spark-layout>
+        <flex-spark-vgroup width="100%" height="100%">
+            <flex-mx-form width="100%" height="100%">
+                <flex-spark-hgroup width="100%" height="40%">
+                    <flex-mx-form-item width="25%" label="Input text">
+                        <flex-mx-text-input id="text"></flex-mx-text-input>
+                    </flex-mx-form-item>
+                    <flex-mx-form-item width="25%" label="Checkbox">
+                        <flex-mx-check-box id="checkbox" label="Check"></flex-mx-check-box>
+                    </flex-mx-form-item>
+                    <component-radiobutton-radio-button-oui-non width="25%" id="radio" label="Radio"></component-radiobutton-radio-button-oui-non>
+                    <flex-mx-form-item width="25%" label="Date">
+                        <flex-mx-date-field width="100%" id="dateField"></flex-mx-date-field>
+                    </flex-mx-form-item>
+                </flex-spark-hgroup>
+                <flex-spark-hgroup width="100%" height="40%">
+                    <flex-mx-form-item width="75%" label="Combobox">
+                        <component-combolist-generique-combox width="50%" id="combo" dataProvider="{myDataProvider}"></component-combolist-generique-combox>
+                    </flex-mx-form-item>
+                    <flex-spark-button width="25%" id="btn" label="Button" click="valid()"></flex-spark-button>
+                </flex-spark-hgroup>
+                <flex-spark-hgroup width="100%" height="20%">
+                    <flex-spark-label width="20%" id="r_text"></flex-spark-label>
+                    <flex-spark-label width="20%" id="r_checkbox"></flex-spark-label>
+                    <flex-spark-label width="20%" id="r_radio"></flex-spark-label>
+                    <flex-spark-label width="20%" id="r_dateField"></flex-spark-label>
+                    <flex-spark-label width="20%" id="r_combo"></flex-spark-label>
+                </flex-spark-hgroup>
+            </flex-mx-form>
+        </flex-spark-vgroup>
+    </flex-spark-panel>
+</flex-spark-application>
+

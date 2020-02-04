@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!-- Simple example to demonstrate Halo Form layout container. -->
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:s="library://ns.adobe.com/flex/spark"
+        xmlns:mx="library://ns.adobe.com/flex/mx"
+        xmlns:radiobutton="component.radiobutton.*"
+        xmlns:button="component.button.*"
+        xmlns:combolist="component.combolist.*">
+
+	<fx:Declarations>
+		<!-- Placer ici les éléments non visuels (services et objets de valeur, par exemple). -->
+	</fx:Declarations>
+    
+    <fx:Script>
+    <![CDATA[
+        import mx.collections.ArrayCollection;
+        
+        [Bindable]
+        public var myDataProvider:ArrayCollection = new ArrayCollection(
+            [ {label:"Visa", data:1}, 
+                {label:"MasterCard", data:2}, 
+                {label:"American Express", data:3} ]);
+        
+        public function valid():void{
+            r_text.text=text.text
+            if(checkbox.selected)
+                r_checkbox.text="check oui"
+            else
+                r_checkbox.text="check non"
+            if(radio.currentValue=="1")
+                r_radio.text="radio oui"
+            else
+                 r_radio.text="radio non"
+            r_dateField.text=dateField.selectedDate.toString()
+            r_combo.text=combo.selectedItem.label
+        }
+    ]]>
+    </fx:Script>
+
+    <s:Panel title="Form Container Example"
+           width="75%" height="75%"
+           horizontalCenter="0" verticalCenter="0">
+
+        <s:layout>
+			<s:VerticalLayout paddingLeft="50" paddingRight="50" paddingTop="50" paddingBottom="50"/>
+		</s:layout>
+
+        <s:VGroup width="100%" height="100%">
+    
+            <mx:Form width="100%" height="100%">
+
+                <s:HGroup width="100%" height="40%">
+                    <mx:FormItem width="25%" label="Input text">
+                        <mx:TextInput id="text"/>
+                    </mx:FormItem>
+        
+                    <mx:FormItem width="25%" label="Checkbox">
+                        <mx:CheckBox id="checkbox" label="Check"/>
+                    </mx:FormItem>
+
+                    <radiobutton:RadioButtonOuiNon width="25%" id="radio" label="Radio" />
+
+                    <mx:FormItem width="25%" label="Date">
+                        <mx:DateField width="100%" id="dateField"/>
+                    </mx:FormItem>
+                </s:HGroup>
+
+                <s:HGroup width="100%" height="40%">
+                    <mx:FormItem width="75%" label="Combobox">
+                        <combolist:GeneriqueCombox width="50%" id="combo" dataProvider="{myDataProvider}"/>
+                    </mx:FormItem>
+
+                    <s:Button width="25%" id="btn" label="Button" click="valid()"/>
+                </s:HGroup>
+
+                <s:HGroup width="100%" height="20%">
+                    <s:Label id="r_text" width="20%"/>
+                    <s:Label id="r_checkbox" width="20%"/>
+                    <s:Label id="r_radio" width="20%"/>
+                    <s:Label id="r_dateField" width="20%"/>
+                    <s:Label id="r_combo" width="20%"/>
+                </s:HGroup>
+
+            </mx:Form>
+
+        </s:VGroup>
+    </s:Panel>
+
+</s:Application>

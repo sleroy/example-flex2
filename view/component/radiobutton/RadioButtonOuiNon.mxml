@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Composant Oui/Non/null
+
+	@param currentValue:String : valeur actuelle du composant, parmi "1" (oui), "0" (non), ou null (ni oui, ni non)
+    @param nullable:Boolean : flag pour autoriser la valeur nulle (ni oui, ni non) (true par défaut)
+	@style styleName : 'vertical' (défaut), ou 'horizontal'
+
+//-->
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx">
+	<s:layout>
+		<s:VerticalLayout gap="2"/>
+	</s:layout>
+	<fx:Declarations>
+		<!-- groupe radiobutton oui ou non -->
+		<s:RadioButtonGroup id="ouinon" enabled="true" />
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import spark.layouts.HorizontalLayout;
+			
+			[Bindable] public var label:String;
+			[Bindable] public var nullable:Boolean = true;
+			
+			
+			[Bindable] private var _currentValue:String = null;
+			
+			public function get currentValue():String {
+				return _currentValue;
+			}
+			
+			public function set currentValue(value:String):void {
+				switch (value) {
+					case 'oui':
+					case 'true':
+					case '1':
+						_currentValue = '1';
+						oui.selected = true;
+						non.selected = false;
+						break;
+					case 'non':
+					case 'false':
+					case '0':
+						_currentValue = '0';
+						oui.selected = false;
+						non.selected = true;
+						break;
+					default:
+						_currentValue = null;
+						oui.selected = false;
+						non.selected = false;
+						break
+				}
+			}
+			
+			
+			protected function radiobutton_clickHandler(event:MouseEvent):void {
+				// TODO Auto-generated method stub
+				if (nullable && ouinon.selectedValue == currentValue) {
+					currentValue = null;
+				} else {
+					_currentValue = ouinon.selectedValue.toString();
+				}
+			}
+			
+			
+			/**
+			 * Pour prendre en compte la valeur styleName 'horizontal' ou 'vertical' du composant, on intervient
+			 * sur updateDisplayList et on forge le layout adapté.
+			 * HorizontalLayout avec un gap de 6 et verticalAlign à bottom pour la version label à gauche, oui/non à droite
+			 * VerticalLayout avec un gap de 2 et un centrage du texte pour la version label en haut, oui/non en bas
+			 **/
+			override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void {
+				
+				switch(this.styleName) {
+					case 'horizontal':
+						contentGroup.layout = new HorizontalLayout();
+						(contentGroup.layout as HorizontalLayout).gap = 6;
+						(contentGroup.layout as HorizontalLayout).verticalAlign = "bottom";
+						hgroup_ouinon.percentWidth = NaN;
+						label_label.percentWidth = NaN;
+						break;
+					case 'vertical':
+					default:
+						contentGroup.layout = new VerticalLayout();
+						(contentGroup.layout as VerticalLayout).gap = 2;
+						hgroup_ouinon.percentWidth = 100;
+						label_label.percentWidth = 100;
+						break;
+				}
+				
+				super.updateDisplayList(unscaledWidth, unscaledHeight);
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<!--
+	// possibilité de mettre un background
+	<s:Rect id="background" top="0" bottom="0" left="0" right="0" radiusX="3">
+	<s:stroke>
+	<s:SolidColorStroke color="0x494949" />
+	</s:stroke>
+	</s:Rect> //-->
+	
+	<s:Group id="contentGroup">
+		<s:layout>
+			<s:VerticalLayout gap="2" />
+		</s:layout>
+		<s:Label id="label_label" width="100%" paddingBottom="1"
+				 text="{label}" textAlign="left" />
+		
+		<s:HGroup id="hgroup_ouinon" verticalAlign="middle" width="100%">
+			<s:RadioButton id="oui" value="1" label="oui" groupName="ouinon" selected="false"
+						   click="radiobutton_clickHandler(event)" />
+			<s:RadioButton id="non" value="0" label="non" groupName="ouinon" selected="false"
+						   click="radiobutton_clickHandler(event)" />
+		</s:HGroup>
+	</s:Group>
+	
+</s:Group>
