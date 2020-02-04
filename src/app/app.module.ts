@@ -9,7 +9,7 @@ import { FlexSparkUIModule } from 'src/app/shared/modules/flex-spark/flex-spark.
 import { ComponentCombolistUIModule } from 'src/app/shared/modules/component-combolist/component-combolist.module';
 import { Mxml2009UIModule } from 'src/app/shared/modules/mxml2009/mxml2009.module';
 import { FlexMxUIModule } from 'src/app/shared/modules/flex-mx/flex-mx.module';
-import { MXWUIModule } from 'src/app/mxwmodule/MXWModule.module';
+import { MXWModule } from 'mxwmodule';
 
 /**
 * Definitions
@@ -31,7 +31,7 @@ FlexSparkUIModule,
 ComponentCombolistUIModule,
 Mxml2009UIModule,
 FlexMxUIModule,
-MXWUIModule,
+MXWModule,
 AppRoutingModule
 ],
 providers: [],
