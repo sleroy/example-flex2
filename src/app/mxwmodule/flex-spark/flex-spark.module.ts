@@ -13,6 +13,7 @@ import {Panel} from './flex-spark-panel/flex-spark-panel.component';
 import {RadioButton} from './flex-spark-radio-button/flex-spark-radio-button.component';
 import {RadioButtonGroup} from './flex-spark-radio-button-group/flex-spark-radio-button-group.component';
 import {Label} from './flex-spark-label/flex-spark-label.component';
+import { MaterialModule } from 'src/app/material.module';
 
 /**
  * Definition of the module FlexSparkUIModule
@@ -35,6 +36,7 @@ import {Label} from './flex-spark-label/flex-spark-label.component';
   imports: [
     CommonModule,
     FlexLayoutModule,
+    MaterialModule
     // Dependencies
   ]
 })

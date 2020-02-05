@@ -1,8 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { MaterialModule } from './material.module'
+import { BrowserModule } from '@angular/platform-browser';
 /**
 * Module imports
 */
@@ -16,29 +20,38 @@ import { MXWUIModule } from 'src/app/mxwmodule/MXWModule.module';
 /**
 * Definitions
 */
-import {test}from './test/test.component';
+import { test } from './test/test.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MatInputModule } from '@angular/material';
+
 
 @NgModule({
-declarations: [
-AppComponent,
-test,
-],
-imports: [
-BrowserModule,
-ComponentRadiobuttonUIModule,
-FlexSparkUIModule,
-ComponentCombolistUIModule,
-Mxml2009UIModule,
-FlexMxUIModule,
-MXWUIModule,
-AppRoutingModule,
-FlexLayoutModule,
-BrowserAnimationsModule
-],
-providers: [],
+  declarations: [
+    AppComponent,
+    test,
+  ],
+  imports: [
+    MaterialModule,
+    BrowserModule,
+    ComponentRadiobuttonUIModule,
+    FlexSparkUIModule,
+    ComponentCombolistUIModule,
+    Mxml2009UIModule,
+    FlexMxUIModule,
+    MXWUIModule,
+    AppRoutingModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule,
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    MatInputModule
+  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
