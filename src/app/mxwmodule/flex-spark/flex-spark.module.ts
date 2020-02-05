@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
+
 /**
 * Module imports
 */
@@ -14,7 +15,10 @@ import {RadioButton} from './flex-spark-radio-button/flex-spark-radio-button.com
 import {RadioButtonGroup} from './flex-spark-radio-button-group/flex-spark-radio-button-group.component';
 import {Label} from './flex-spark-label/flex-spark-label.component';
 import { MaterialModule } from 'src/app/material.module';
-
+import {Group} from './flex-spark-group/flex-spark-group.component';
+import {HGroup} from './flex-spark-hgroup/flex-spark-hgroup.component';
+import {VGroup} from './flex-spark-vgroup/flex-spark-vgroup.component';
+import {Button} from './flex-spark-button/flex-spark-button.component';
 /**
  * Definition of the module FlexSparkUIModule
  */
@@ -25,6 +29,10 @@ import { MaterialModule } from 'src/app/material.module';
     RadioButton,
     RadioButtonGroup,
     Label,
+    Group,
+    HGroup,
+    VGroup,
+    Button,
   ],
   exports: [
     Application,
@@ -32,6 +40,10 @@ import { MaterialModule } from 'src/app/material.module';
     RadioButton,
     RadioButtonGroup,
     Label,
+    Group,
+    HGroup,
+    VGroup,
+    Button,
   ],
   imports: [
     CommonModule,

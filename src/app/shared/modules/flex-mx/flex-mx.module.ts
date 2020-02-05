@@ -11,17 +11,14 @@ import { MaterialModule } from 'src/app/material.module'
 /**
 * Definitions
 */
-import {GeneriqueCombox} from './component-combolist-generique-combox/component-combolist-generique-combox.component';
 
 /**
- * Definition of the module ComponentCombolistUIModule
+ * Definition of the module FlexMxUIModule
  */
 @NgModule({
   declarations: [
-    GeneriqueCombox,
   ],
   exports: [
-    GeneriqueCombox,
   ],
   imports: [
     // Dependencies
@@ -30,4 +27,4 @@ import {GeneriqueCombox} from './component-combolist-generique-combox/component-
     FlexLayoutModule,
   ]
 })
-export class ComponentCombolistUIModule { }
+export class FlexMxUIModule { }
