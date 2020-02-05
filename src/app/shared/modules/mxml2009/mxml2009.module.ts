@@ -11,14 +11,20 @@ import { MaterialModule } from 'src/app/material.module'
 /**
 * Definitions
 */
+import {Declarations} from './mxml-2009-declarations/mxml-2009-declarations.component';
+import {Script} from './mxml-2009-script/mxml-2009-script.component';
 
 /**
- * Definition of the module FlexMxUIModule
+ * Definition of the module Mxml2009UIModule
  */
 @NgModule({
   declarations: [
+    Declarations,
+    Script,
   ],
   exports: [
+    Declarations,
+    Script,
   ],
   imports: [
     // Dependencies
@@ -27,4 +33,4 @@ import { MaterialModule } from 'src/app/material.module'
     FlexLayoutModule,
   ]
 })
-export class FlexMxUIModule { }
+export class Mxml2009UIModule { }

@@ -7,6 +7,7 @@ import { MaterialModule } from 'src/app/material.module'
 /**
 * Module imports
 */
+import { Mxml2009UIModule } from 'src/app/shared/modules/mxml2009/mxml2009.module';
 import { FlexSparkUIModule } from 'src/app/mxwmodule/flex-spark/flex-spark.module';
 
 /**
@@ -29,6 +30,7 @@ import {RadioButtonOuiNon} from './component-radiobutton-radio-button-oui-non/co
     CommonModule,
     MaterialModule,
     FlexLayoutModule,
+      Mxml2009UIModule,
       FlexSparkUIModule,
   ]
 })
