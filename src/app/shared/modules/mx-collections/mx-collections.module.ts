@@ -17,10 +17,8 @@ import {ArrayCollection} from './mx-collections-array-collection/mx-collections-
  */
 @NgModule({
   declarations: [
-    ArrayCollection,
   ],
   exports: [
-    ArrayCollection,
   ],
   imports: [
     // Dependencies

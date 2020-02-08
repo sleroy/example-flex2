@@ -17,10 +17,8 @@ import {HorizontalLayout} from './spark-layouts-horizontal-layout/spark-layouts-
  */
 @NgModule({
   declarations: [
-    HorizontalLayout,
   ],
   exports: [
-    HorizontalLayout,
   ],
   imports: [
     // Dependencies
