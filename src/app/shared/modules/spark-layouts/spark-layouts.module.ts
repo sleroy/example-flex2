@@ -10,17 +10,17 @@ import { MaterialModule } from 'src/app/material.module'
 /**
 * Definitions
 */
-import {GeneriqueCombox} from './component-combolist-generique-combox/component-combolist-generique-combox.component';
+import {HorizontalLayout} from './spark-layouts-horizontal-layout/spark-layouts-horizontal-layout.service';
 
 /**
- * Definition of the module ComponentCombolistUIModule
+ * Definition of the module SparkLayoutsUIModule
  */
 @NgModule({
   declarations: [
-    GeneriqueCombox,
+    HorizontalLayout,
   ],
   exports: [
-    GeneriqueCombox,
+    HorizontalLayout,
   ],
   imports: [
     // Dependencies
@@ -29,4 +29,4 @@ import {GeneriqueCombox} from './component-combolist-generique-combox/component-
     FlexLayoutModule,
   ]
 })
-export class ComponentCombolistUIModule { }
+export class SparkLayoutsUIModule { }

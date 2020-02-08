@@ -10,17 +10,17 @@ import { MaterialModule } from 'src/app/material.module'
 /**
 * Definitions
 */
-import {GeneriqueCombox} from './component-combolist-generique-combox/component-combolist-generique-combox.component';
+import {ArrayCollection} from './mx-collections-array-collection/mx-collections-array-collection.service';
 
 /**
- * Definition of the module ComponentCombolistUIModule
+ * Definition of the module MxCollectionsUIModule
  */
 @NgModule({
   declarations: [
-    GeneriqueCombox,
+    ArrayCollection,
   ],
   exports: [
-    GeneriqueCombox,
+    ArrayCollection,
   ],
   imports: [
     // Dependencies
@@ -29,4 +29,4 @@ import {GeneriqueCombox} from './component-combolist-generique-combox/component-
     FlexLayoutModule,
   ]
 })
-export class ComponentCombolistUIModule { }
+export class MxCollectionsUIModule { }

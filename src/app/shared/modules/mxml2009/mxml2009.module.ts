@@ -3,9 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from 'src/app/material.module'
 
-
 /**
-* Module imports
+* Module dependencies
 */
 
 /**

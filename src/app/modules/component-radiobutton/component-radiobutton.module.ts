@@ -3,9 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from 'src/app/material.module'
 
-
 /**
-* Module imports
+* Module dependencies
 */
 import { Mxml2009UIModule } from 'src/app/shared/modules/mxml2009/mxml2009.module';
 import { FlexSparkUIModule } from 'src/app/mxwmodule/flex-spark/flex-spark.module';

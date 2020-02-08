@@ -14,7 +14,9 @@ import {MatInputModule} from '@angular/material';
 */
 import { ComponentRadiobuttonUIModule } from 'src/app/modules/component-radiobutton/component-radiobutton.module';
 import { ComponentCombolistUIModule } from 'src/app/shared/modules/component-combolist/component-combolist.module';
+import { MxCollectionsUIModule } from 'src/app/shared/modules/mx-collections/mx-collections.module';
 import { Mxml2009UIModule } from 'src/app/shared/modules/mxml2009/mxml2009.module';
+import { SparkLayoutsUIModule } from 'src/app/shared/modules/spark-layouts/spark-layouts.module';
 import { FlexSparkUIModule } from 'src/app/mxwmodule/flex-spark/flex-spark.module';
 import { FlexMxUIModule } from 'src/app/mxwmodule/flex-mx/flex-mx.module';
 
@@ -35,7 +37,9 @@ imports: [
 BrowserModule,
 ComponentRadiobuttonUIModule,
 ComponentCombolistUIModule,
+MxCollectionsUIModule,
 Mxml2009UIModule,
+SparkLayoutsUIModule,
 FlexSparkUIModule,
 FlexMxUIModule,
 AppRoutingModule,
