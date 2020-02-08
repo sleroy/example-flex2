@@ -1,5 +1,5 @@
-import { FlexSparkUIModule } from 'src/app/shared/modules/flex-spark/flex-spark.module';
-import { FlexMxUIModule } from 'src/app/shared/modules/flex-mx/flex-mx.module';
+import { FlexSparkUIModule } from './flex-spark/flex-spark.module';
+import { FlexMxUIModule } from './flex-mx/flex-mx.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
