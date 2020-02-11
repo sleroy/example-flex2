@@ -74,11 +74,11 @@
                 </s:HGroup>
 
                 <s:HGroup width="100%" height="20%">
-                    <s:Label id="r_text" width="20%"/>
-                    <s:Label id="r_checkbox" width="20%"/>
-                    <s:Label id="r_radio" width="20%"/>
-                    <s:Label id="r_dateField" width="20%"/>
-                    <s:Label id="r_combo" width="20%"/>
+                    <s:Label id="r_text" text="{r_text}" width="20%"/>
+                    <s:Label id="r_checkbox" text="{r_checkbox}" width="20%"/>
+                    <s:Label id="r_radio" text="{r_radio}" width="20%"/>
+                    <s:Label id="r_dateField" text="{r_dateField}" width="20%"/>
+                    <s:Label id="r_combo" text="{r_combo}" width="20%"/>
                 </s:HGroup>
 
             </mx:Form>

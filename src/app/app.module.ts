@@ -12,13 +12,13 @@ import {MatInputModule} from '@angular/material';
 /**
 * Module imports
 */
-import { ComponentRadiobuttonUIModule } from 'src/app/modules/component-radiobutton/component-radiobutton.module';
 import { ComponentCombolistUIModule } from 'src/app/shared/modules/component-combolist/component-combolist.module';
 import { MxCollectionsUIModule } from 'src/app/shared/modules/mx-collections/mx-collections.module';
 import { Mxml2009UIModule } from 'src/app/shared/modules/mxml2009/mxml2009.module';
+import { ComponentRadiobuttonUIModule } from 'src/app/shared/modules/component-radiobutton/component-radiobutton.module';
 import { SparkLayoutsUIModule } from 'src/app/shared/modules/spark-layouts/spark-layouts.module';
-import { FlexSparkUIModule } from 'src/app/mxwmodule/flex-spark/flex-spark.module';
-import { FlexMxUIModule } from 'src/app/mxwmodule/flex-mx/flex-mx.module';
+import { MXWFlexSparkUIModule } from 'src/app/mxwmodule/flex-spark/flex-spark.module';
+import { MXWFlexMxUIModule } from 'src/app/mxwmodule/flex-mx/flex-mx.module';
 
 /**
 * Definitions
@@ -35,13 +35,13 @@ test,
 ],
 imports: [
 BrowserModule,
-ComponentRadiobuttonUIModule,
 ComponentCombolistUIModule,
 MxCollectionsUIModule,
 Mxml2009UIModule,
+ComponentRadiobuttonUIModule,
 SparkLayoutsUIModule,
-FlexSparkUIModule,
-FlexMxUIModule,
+MXWFlexSparkUIModule,
+MXWFlexMxUIModule,
 AppRoutingModule,
 FlexLayoutModule,
 MaterialModule,

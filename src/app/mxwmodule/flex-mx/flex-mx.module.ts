@@ -44,4 +44,4 @@ import { MatInputModule } from '@angular/material';
     // Dependencies
   ]
 })
-export class FlexMxUIModule { }
+export class MXWFlexMxUIModule { }

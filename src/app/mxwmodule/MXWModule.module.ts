@@ -1,5 +1,5 @@
-import { FlexSparkUIModule } from './flex-spark/flex-spark.module';
-import { FlexMxUIModule } from './flex-mx/flex-mx.module';
+import { MXWFlexSparkUIModule } from './flex-spark/flex-spark.module';
+import { MXWFlexMxUIModule } from './flex-mx/flex-mx.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -13,14 +13,14 @@ import { MaterialModule } from '../material.module';
   ],
   exports: [
 
-    FlexMxUIModule,
-    FlexSparkUIModule
+    MXWFlexMxUIModule,
+    MXWFlexSparkUIModule
   ],
   imports: [
     CommonModule,
     MaterialModule,
-    FlexMxUIModule,
-    FlexSparkUIModule
+    MXWFlexMxUIModule,
+    MXWFlexSparkUIModule
   ]
 })
 export class MXWUIModule { }

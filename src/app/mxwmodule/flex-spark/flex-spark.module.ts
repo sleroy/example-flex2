@@ -52,4 +52,4 @@ import {Button} from './flex-spark-button/flex-spark-button.component';
     // Dependencies
   ]
 })
-export class FlexSparkUIModule { }
+export class MXWFlexSparkUIModule { }
