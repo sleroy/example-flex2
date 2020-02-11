@@ -1,5 +1,4 @@
-<mat-form-field>
-    <mat-radio-button class="example-radio-button">
 
-    </mat-radio-button>
-</mat-form-field>
+<mat-radio-button [value]="value" (change)="onChange($event)" [checked]="checked">
+    {{label}}
+</mat-radio-button>

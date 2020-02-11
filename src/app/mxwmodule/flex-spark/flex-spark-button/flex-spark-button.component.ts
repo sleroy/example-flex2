@@ -12,7 +12,7 @@ export class Button implements OnInit {
 
    @Input()  id: String;
    @Input()  label: String;
-   @Input()  click: any;
+   @Input()  color: string;
 
 
   ngOnInit() {

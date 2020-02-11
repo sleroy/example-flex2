@@ -12,9 +12,10 @@ export class RadioButtonGroup implements OnInit {
 
    @Input()  id: String;
    @Input()  enabled: Boolean;
+   @Input()  layout: string;
+   @Input()  radioValue: any;
 
 
   ngOnInit() {
   }
-
 }

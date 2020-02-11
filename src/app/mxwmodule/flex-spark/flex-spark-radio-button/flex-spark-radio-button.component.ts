@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, OnChanges, SimpleChange, HostBinding  } from '@angular/core';
+import { Component, OnInit, Input, Output, OnChanges, SimpleChange, HostBinding, EventEmitter  } from '@angular/core';
 
 
 @Component({
@@ -15,10 +15,14 @@ export class RadioButton implements OnInit {
    @Input()  label: String;
    @Input()  value: Number;
    @Input()  click: String;
-   @Input()  selected: Boolean;
+   @Input()  checked: Boolean;
+   @Output() onRadioValueChanged = new EventEmitter<boolean>();
 
 
   ngOnInit() {
   }
 
+  onChange(event){
+    this.onRadioValueChanged.emit(event.value)
+  }
 }

@@ -10,18 +10,13 @@ export class Label implements OnInit {
 
   constructor() { }
 
-  @Input()  id: String;
-  @Input()  label: String;
-  @Input()  layout: String;
-  @Input()  radioValue: any;
-  @Output() onRadioValueChangedUp = new EventEmitter<boolean>();
+   @Input()  paddingBottom: Number;
+   @Input()  textAlign: String;
+   @Input()  id: String;
+   @Input()  text: any;
 
 
   ngOnInit() {
-  }
-
-  onRadioValueChanged(event){
-    this.onRadioValueChangedUp.emit(event);
   }
 
 }

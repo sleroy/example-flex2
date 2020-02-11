@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, OnChanges, SimpleChange, HostBinding  } from '@angular/core';
+import { Component, OnInit, Input, Output, OnChanges, SimpleChange, HostBinding, EventEmitter  } from '@angular/core';
 
 
 @Component({
@@ -12,9 +12,15 @@ export class CheckBox implements OnInit {
 
    @Input()  id: String;
    @Input()  label: String;
+   @Input()  checked: boolean;
+   @Output() onCheckboxValueChanged = new EventEmitter<boolean>();
 
 
   ngOnInit() {
+  }
+
+  onChange(event){ 
+    this.onCheckboxValueChanged.emit(event);
   }
 
 }
