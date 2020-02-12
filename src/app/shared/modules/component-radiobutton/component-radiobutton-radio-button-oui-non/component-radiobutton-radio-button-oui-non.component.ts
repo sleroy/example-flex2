@@ -10,6 +10,8 @@ export class RadioButtonOuiNon implements OnInit {
 
   constructor() { }
 
+   @Input()  id: String;
+   @Input()  label: String;
 
 
   ngOnInit() {

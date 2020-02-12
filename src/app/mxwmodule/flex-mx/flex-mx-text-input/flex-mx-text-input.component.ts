@@ -12,7 +12,7 @@ export class TextInput implements OnInit {
 
    @Input()  id: String;
    @Input()  label: String;
-   @Input()  value: String;
+   @Input()  text: String;
    @Output() onTextValueChanged = new EventEmitter<boolean>();
 
   ngOnInit() {

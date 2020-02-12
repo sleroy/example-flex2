@@ -1,13 +1,16 @@
 
-
-<flex-spark-group>
-    <flex-spark-radio-button-group id="ouinon" enabled="true"></flex-spark-radio-button-group>
-    <flex-spark-group id="contentGroup">
-        <flex-spark-label id="label_label" fxFlex="100" paddingBottom="1" [text]="label" textAlign="left"></flex-spark-label>
-        <div id="hgroup_ouinon" verticalAlign="middle" fxFlex="100" fxLayout="row">
-            <flex-spark-radio-button id="oui" value="1" label="oui" groupName="ouinon" selected="false" click="radiobutton_clickHandler(event)"></flex-spark-radio-button>
-            <flex-spark-radio-button id="non" value="0" label="non" groupName="ouinon" selected="false" click="radiobutton_clickHandler(event)"></flex-spark-radio-button>
-        </div>
-    </flex-spark-group>
+<flex-spark-group> 
+ <flex-spark-radio-button-group id="ouinon" enabled="true"> 
+ </flex-spark-radio-button-group>
+ <flex-spark-group id="contentGroup"> 
+  <flex-spark-label id="label_label" fxflex="100" paddingbottom="1" [text]="label" textalign="left"> 
+  </flex-spark-label>
+  <div fxflex="100" fxlayout="row" id="hgroup_ouinon" verticalalign="middle"> 
+   <flex-spark-radio-button id="oui" value="1" label="oui" groupname="ouinon" selected="false" click="radiobutton_clickHandler(event)"> 
+   </flex-spark-radio-button>
+   <flex-spark-radio-button id="non" value="0" label="non" groupname="ouinon" selected="false" click="radiobutton_clickHandler(event)"> 
+   </flex-spark-radio-button>
+  </div>
+ </flex-spark-group>
 </flex-spark-group>
 

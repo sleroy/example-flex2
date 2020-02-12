@@ -17,6 +17,7 @@ import {CheckBox} from './flex-mx-check-box/flex-mx-check-box.component';
 import {FormItem} from './flex-mx-form-item/flex-mx-form-item.component';
 import { MaterialModule } from 'src/app/material.module';
 import { MatInputModule } from '@angular/material';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 /**
  * Definition of the module FlexMxUIModule
@@ -40,7 +41,9 @@ import { MatInputModule } from '@angular/material';
     CommonModule,
     FlexLayoutModule,
     MaterialModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
     // Dependencies
   ]
 })
