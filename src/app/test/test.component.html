@@ -1,13 +1,47 @@
 
-<flex-spark-application fxflex> 
- <flex-spark-panel title="Form Container Example" fxflex="75" height="75%" horizontalcenter="0" verticalcenter="0"> 
-  <div fxlayout="column wrap" fxlayoutalign="space-between none" fxflex="100" height="100%"> 
-   <flex-mx-form fxflex="100" height="100%"> 
-    <div fxflex="100" fxlayout="row" height="40%"> 
-     <flex-mx-form-item fxflex="25" label="Input text"> 
-      <flex-mx-text-input id="text" text="Example1"> 
+<flex-spark-application fxFlex> 
+ <flex-spark-panel title="Form Container Example" fxFlex="75" height="75%" horizontalCenter="0" verticalCenter="0"> 
+  <div fxLayout="column wrap" fxLayoutAlign="space-between none" fxFlex="100" > 
+   <flex-mx-form fxFlex="100" > 
+    <div fxFlex="100" fxLayout="row"> 
+     <flex-mx-form-item fxFlex="25" label="Input text"> 
+      <flex-mx-text-input label="" id="text"> 
       </flex-mx-text-input>
      </flex-mx-form-item>
+     <flex-mx-form-item fxFlex="25" label="Checkbox"> 
+      <flex-mx-check-box label="Check" id="checkbox"> 
+      </flex-mx-check-box>
+     </flex-mx-form-item>
+     <flex-mx-form-item fxFlex="25" label="Radio"> 
+      <component-radiobutton-radio-button-oui-non id="radio" layout="row"> 
+      </component-radiobutton-radio-button-oui-non> 
+     </flex-mx-form-item>
+     <flex-mx-form-item fxFlex="25" label="Date"> 
+      <flex-mx-date-field label="" fxFlex="100" id="dateField"> 
+      </flex-mx-date-field>
+     </flex-mx-form-item>
+    </div>
+    <div fxFlex="100" fxLayout="row"> 
+     <flex-mx-form-item fxFlex="75" label="Combobox"> 
+      <component-combolist-generique-combox fxFlex="50" id="combo" [dataProvider]="myDataProvider"> 
+      </component-combolist-generique-combox>
+     </flex-mx-form-item>
+     <flex-mx-form-item fxFlex="25"> 
+      <flex-spark-button (click)="valid()" id="btn" label="Button" color="primary"> 
+      </flex-spark-button> 
+     </flex-mx-form-item>
+    </div>
+    <div fxFlex="100" fxLayout="row"> 
+     <flex-spark-label label="" id="r_text" [text]="r_text" fxFlex="20"> 
+     </flex-spark-label>
+     <flex-spark-label label="" id="r_checkbox" [text]="r_checkbox" fxFlex="20"> 
+     </flex-spark-label>
+     <flex-spark-label label="" id="r_radio" [text]="r_radio" fxFlex="20"> 
+     </flex-spark-label>
+     <flex-spark-label label="" id="r_dateField" [text]="r_dateField" fxFlex="20"> 
+     </flex-spark-label>
+     <flex-spark-label label="" id="r_combo" [text]="r_combo" fxFlex="20"> 
+     </flex-spark-label>
     </div>
    </flex-mx-form>
   </div>

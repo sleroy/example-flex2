@@ -51,12 +51,38 @@
 
                 <s:HGroup width="100%" height="40%">
                     <mx:FormItem width="25%" label="Input text">
-                        <mx:TextInput id="text" text="Example1" />
+                        <mx:TextInput id="text"/>
                     </mx:FormItem>
-                            
+        
+                    <mx:FormItem width="25%" label="Checkbox">
+                        <mx:CheckBox id="checkbox" label="Check"/>
+                    </mx:FormItem>
 
+                    <radiobutton:RadioButtonOuiNon width="25%" id="radio" label="Radio" />
+
+                    <mx:FormItem width="25%" label="Date">
+                        <mx:DateField width="100%" id="dateField"/>
+                    </mx:FormItem>
                 </s:HGroup>
+
+                <s:HGroup width="100%" height="40%">
+                    <mx:FormItem width="75%" label="Combobox">
+                        <combolist:GeneriqueCombox width="50%" id="combo" dataProvider="{myDataProvider}"/>
+                    </mx:FormItem>
+
+                    <s:Button width="25%" id="btn" label="Button" click="valid()"/>
+                </s:HGroup>
+
+                <s:HGroup width="100%" height="20%">
+                    <s:Label id="r_text" text="{r_text}" width="20%"/>
+                    <s:Label id="r_checkbox" text="{r_checkbox}" width="20%"/>
+                    <s:Label id="r_radio" text="{r_radio}" width="20%"/>
+                    <s:Label id="r_dateField" text="{r_dateField}" width="20%"/>
+                    <s:Label id="r_combo" text="{r_combo}" width="20%"/>
+                </s:HGroup>
+
             </mx:Form>
+
         </s:VGroup>
     </s:Panel>
 
